@@ -20,7 +20,7 @@ test("login test", async function({page}){
 
     await page.getByText("Logout").click()
 
-    await page.waitForTimeout(4500)
+    await page.waitForTimeout(2000)
 
     const nexturl = await page.url();
     await expect(nexturl).toContain("login")
